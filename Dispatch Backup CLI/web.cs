@@ -8,7 +8,7 @@ namespace Dispatch_Backup_CLI
     {
         public static string ApiRequest(string url, string uAgent)
         {
-            Console.Write($"\nSending HTTP request to: {url}");
+            Console.WriteLine($"\nSending HTTP request to: {url}");
             // Setup HTTP Request
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Headers.Add("User-Agent", uAgent);
