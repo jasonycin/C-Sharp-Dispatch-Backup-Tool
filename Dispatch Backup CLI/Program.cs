@@ -21,7 +21,7 @@ namespace Dispatch_Backup_CLI
                 info.uAgent);
             Console.WriteLine($"\n{dispatchList.Count} were found. List of Dispatch ID's: \n{string.Join(", ",dispatchList)}");
             // Get individual dispatches
-            
+            List<string> dispatchContent = GetEachDispatch(dispatchList);
             // Prevents auto-termination of Console Application
             Console.ReadKey();
         }

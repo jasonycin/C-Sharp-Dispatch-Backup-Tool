@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Threading;
 using System.Xml;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -28,6 +29,21 @@ namespace Dispatch_Backup_CLI
                 dispatchIDs.Add(id["@id"].ToString());
             };
             return dispatchIDs;
+        }
+        
+        public static List<string> GetEachDispatch(List<string> dispatchIds)
+        {
+            // Create new list which will contain the text content.
+            List<string> dispatchContent = new List<string>();
+            for (int i = 0; i < dispatchIds.Count; i++)
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.Write("\nRequest: ");
+                Console.ResetColor();
+                Console.Write($"{i+1} / {dispatchIds.Count}\n");
+                Console.WriteLine("Sending HTTP request to: https://www.nationstates.net/cgi-bin/api.cgi?dispatch=656462");
+            }
+            return dispatchContent;
         }
     }
 }
