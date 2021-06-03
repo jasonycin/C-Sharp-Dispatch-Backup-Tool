@@ -1,0 +1,18 @@
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\bin\Debug\net5.0\Dispatch Backup CLI.exe
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\bin\Debug\net5.0\Dispatch Backup CLI.deps.json
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\bin\Debug\net5.0\Dispatch Backup CLI.runtimeconfig.json
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\bin\Debug\net5.0\Dispatch Backup CLI.runtimeconfig.dev.json
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\bin\Debug\net5.0\Dispatch Backup CLI.dll
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\bin\Debug\net5.0\ref\Dispatch Backup CLI.dll
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\bin\Debug\net5.0\Dispatch Backup CLI.pdb
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\obj\Debug\net5.0\Dispatch Backup CLI.csproj.AssemblyReference.cache
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\obj\Debug\net5.0\Dispatch Backup CLI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\obj\Debug\net5.0\Dispatch Backup CLI.AssemblyInfoInputs.cache
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\obj\Debug\net5.0\Dispatch Backup CLI.AssemblyInfo.cs
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\obj\Debug\net5.0\Dispatch Backup CLI.csproj.CoreCompileInputs.cache
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\obj\Debug\net5.0\Dispatch Backup CLI.dll
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\obj\Debug\net5.0\ref\Dispatch Backup CLI.dll
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\obj\Debug\net5.0\Dispatch Backup CLI.pdb
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\obj\Debug\net5.0\Dispatch Backup CLI.genruntimeconfig.cache
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Documents\Coding\C#\Dispatch Backup CLI\Dispatch Backup CLI\obj\Debug\net5.0\Dispatch Backup CLI.csproj.CopyComplete
