@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using static Dispatch_Backup_CLI.ui;
 using static Dispatch_Backup_CLI.dispatch;
 
@@ -21,7 +22,10 @@ namespace Dispatch_Backup_CLI
                 info.uAgent);
             Console.WriteLine($"\n{dispatchList.Count} were found. List of Dispatch ID's: \n{string.Join(", ",dispatchList)}");
             // Get individual dispatches
-            List<string> dispatchContent = GetEachDispatch(dispatchList);
+            List<string> dispatchContent = GetEachDispatch(dispatchList, info.uAgent);
+            List<string> formattedDispatchContent = CleanupContent(dispatchContent);
+                // System.IO.File.WriteAllLines("backup.txt", dispatchContent);
+            Console.WriteLine(String.Join("\n \n", formattedDispatchContent));
             // Prevents auto-termination of Console Application
             Console.ReadKey();
         }
