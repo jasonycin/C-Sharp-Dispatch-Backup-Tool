@@ -18,7 +18,6 @@ namespace Dispatch_Backup_CLI
                 request.Method = "GET";
                 // Send Request
                 var reqAnswer = request.GetResponse();
-                Console.WriteLine(reqAnswer);
                 var reqStream = reqAnswer.GetResponseStream();
                 // Read Response/Answer
                 var responseReader = new StreamReader(reqStream!);

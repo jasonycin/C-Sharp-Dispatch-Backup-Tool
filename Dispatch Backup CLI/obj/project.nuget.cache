@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "oyO+N9JOuD2AvVxTlLKlsVKUXwp5ZV6xNyo9jrvd155XX5GhVFmCkRirFXnjNVDtH86d1LFePMDXeDbaCFY3Eg==",
+  "dgSpecHash": "xdquRoHjtzn8vk2nWC0ujPhoBOdQ1al1xjbGfnXfnRiRXDkbJr0ORICTNqeGaBeacxwos5zxv8W78o1D1sbIcw==",
   "success": true,
   "projectFilePath": "D:\\Documents\\Coding\\C#\\Dispatch Backup CLI\\Dispatch Backup CLI\\Dispatch Backup CLI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jason\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\jason\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\jason\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\5.0.6\\microsoft.netcore.app.runtime.win-x86.5.0.6.nupkg.sha512",
+    "C:\\Users\\jason\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\5.0.6\\microsoft.windowsdesktop.app.runtime.win-x86.5.0.6.nupkg.sha512",
+    "C:\\Users\\jason\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\5.0.6\\microsoft.aspnetcore.app.runtime.win-x86.5.0.6.nupkg.sha512"
   ],
   "logs": []
 }
