@@ -2,7 +2,7 @@
 
 namespace Dispatch_Backup_CLI
 {
-    public class ui
+    public class Ui
     {
         public static void Intro()
         {
@@ -19,6 +19,7 @@ namespace Dispatch_Backup_CLI
             string nationName = Console.ReadLine();
             Console.Write("\nEnter the User-Agent. This should be YOUR nation name or email address: ");
             string uAgent = Console.ReadLine();
+            Console.Write("\n");
             // Future release will support setting a custom ratelimit.
             int ratelimit = 650;
             return (nationName, ratelimit, uAgent);

@@ -4,11 +4,11 @@ using System.Net;
 
 namespace Dispatch_Backup_CLI
 {
-    public class web
+    public class Web
     {
         public static string ApiRequest(string url, string uAgent)
         {
-            Console.WriteLine($"\nSending HTTP request to: {url}");
+            Console.WriteLine($"Sending HTTP request to: {url}");
             // Setup HTTP Request
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Headers.Add("User-Agent", uAgent);

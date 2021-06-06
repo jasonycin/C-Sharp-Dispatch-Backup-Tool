@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using static Dispatch_Backup_CLI.ui;
-using static Dispatch_Backup_CLI.dispatch;
+using System.Diagnostics;
+using System.Threading;
+using Newtonsoft.Json.Linq;
+using static Dispatch_Backup_CLI.Ui;
+using static Dispatch_Backup_CLI.Dispatch;
 
 namespace Dispatch_Backup_CLI
 {
@@ -18,16 +20,15 @@ namespace Dispatch_Backup_CLI
             var info = PromptData();
             // Get Dispatch List
             // Initial request to get raw data (web.cs)
-            List<string> dispatchList = GetDispatchList($"https://www.nationstates.net/cgi-bin/api.cgi?nation={info.nationName}&q=dispatchlist", 
+            (List<string> IDs, JObject json) dispatchList = GetDispatchList(
+                $"https://www.nationstates.net/cgi-bin/api.cgi?nation={info.nationName}&q=dispatchlist", 
                 info.uAgent);
-            Console.WriteLine($"\n{dispatchList.Count} were found. List of Dispatch ID's: \n{string.Join(", ",dispatchList)}");
+            Console.WriteLine($"\n{dispatchList.IDs.Count} were found. List of Dispatch ID's: \n{string.Join(", ",dispatchList.IDs)}");
             // Get individual dispatches
-            List<string> dispatchContent = GetEachDispatch(dispatchList, info.uAgent);
-            List<string> formattedDispatchContent = CleanupContent(dispatchContent);
-                // System.IO.File.WriteAllLines("backup.txt", dispatchContent);
-            Console.WriteLine(String.Join("\n \n", formattedDispatchContent));
-            // Prevents auto-termination of Console Application
-            Console.ReadKey();
+            List<string> dispatchContent = GetEachDispatch(dispatchList.IDs, info.uAgent);
+            List<string> formattedDispatchContent = FormatResult(dispatchContent, dispatchList.json);
+            // Save As File
+            SaveFile(formattedDispatchContent, dispatchList.json);
         }
     }
 
